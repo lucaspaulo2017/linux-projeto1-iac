@@ -1,5 +1,6 @@
 #!/bin/bash
 
+###  SCRIPT PARA CRIAR USUÁRIOS NO LINUX  ###
 
 echo "Criando usuários do sistema...."
 
@@ -15,5 +16,6 @@ passwd guest12 -e
 useradd guest13 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
 passwd guest13 -e
 
+echo "Usuários Criados com Sucesso"
 echo "Finalizado!!"
 
